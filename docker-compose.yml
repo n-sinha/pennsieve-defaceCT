@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  
+  deface:
+    env_file:
+      - dev.env
+    image: nishant/deface
+    volumes:
+      - ./data:/data
+    container_name: mideface
+    build:
+      context: .
+      dockerfile: ./Dockerfile
