@@ -5,10 +5,10 @@ services:
   deface:
     env_file:
       - dev.env
-    image: nishant/deface
+    image: nishant/deface_ct
     volumes:
       - ./data:/data
-    container_name: mideface
+    container_name: deface_ct
     build:
       context: .
       dockerfile: ./Dockerfile
